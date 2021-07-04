@@ -28,13 +28,15 @@
 		A83F8CC22691AD8E00159968 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CC12691AD8E00159968 /* UserService.swift */; };
 		A83F8CC72691B2CB00159968 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CC62691B2CB00159968 /* ImagePicker.swift */; };
 		A83F8CCC2691EF4A00159968 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CCB2691EF4A00159968 /* Extensions.swift */; };
+		A83F8CDD26921D0500159968 /* SignUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CDC26921D0500159968 /* SignUpViewModelTests.swift */; };
+		A83F8CE22692202400159968 /* UserProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CE12692202400159968 /* UserProfileCellViewModel.swift */; };
+		A83F8CE72692232E00159968 /* UserProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CE62692232E00159968 /* UserProfileViewModelTests.swift */; };
 		A852792526916E4B000A1B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792426916E4B000A1B55 /* AppDelegate.swift */; };
 		A852792726916E4B000A1B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792626916E4B000A1B55 /* SceneDelegate.swift */; };
 		A852792926916E4B000A1B55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792826916E4B000A1B55 /* SignUpViewController.swift */; };
 		A852792C26916E4B000A1B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A852792A26916E4B000A1B55 /* Main.storyboard */; };
 		A852792E26916E4C000A1B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A852792D26916E4C000A1B55 /* Assets.xcassets */; };
 		A852793126916E4C000A1B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A852792F26916E4C000A1B55 /* LaunchScreen.storyboard */; };
-		A852793C26916E4C000A1B55 /* UserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852793B26916E4C000A1B55 /* UserProfileTests.swift */; };
 		A852794726916E4C000A1B55 /* UserProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852794626916E4C000A1B55 /* UserProfileUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,9 @@
 		A83F8CC12691AD8E00159968 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A83F8CC62691B2CB00159968 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A83F8CCB2691EF4A00159968 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A83F8CDC26921D0500159968 /* SignUpViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelTests.swift; sourceTree = "<group>"; };
+		A83F8CE12692202400159968 /* UserProfileCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCellViewModel.swift; sourceTree = "<group>"; };
+		A83F8CE62692232E00159968 /* UserProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModelTests.swift; sourceTree = "<group>"; };
 		A852792126916E4B000A1B55 /* UserProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A852792426916E4B000A1B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A852792626916E4B000A1B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +94,6 @@
 		A852793026916E4C000A1B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A852793226916E4C000A1B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A852793726916E4C000A1B55 /* UserProfileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserProfileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A852793B26916E4C000A1B55 /* UserProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTests.swift; sourceTree = "<group>"; };
 		A852793D26916E4C000A1B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A852794226916E4C000A1B55 /* UserProfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserProfileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A852794626916E4C000A1B55 /* UserProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileUITests.swift; sourceTree = "<group>"; };
@@ -234,7 +238,9 @@
 		A852793A26916E4C000A1B55 /* UserProfileTests */ = {
 			isa = PBXGroup;
 			children = (
-				A852793B26916E4C000A1B55 /* UserProfileTests.swift */,
+				A83F8CDC26921D0500159968 /* SignUpViewModelTests.swift */,
+				A83F8CE62692232E00159968 /* UserProfileViewModelTests.swift */,
+				A83F8CE12692202400159968 /* UserProfileCellViewModel.swift */,
 				A852793D26916E4C000A1B55 /* Info.plist */,
 			);
 			path = UserProfileTests;
@@ -546,7 +552,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A852793C26916E4C000A1B55 /* UserProfileTests.swift in Sources */,
+				A83F8CDD26921D0500159968 /* SignUpViewModelTests.swift in Sources */,
+				A83F8CE72692232E00159968 /* UserProfileViewModelTests.swift in Sources */,
+				A83F8CE22692202400159968 /* UserProfileCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
