@@ -67,5 +67,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We need Camera access to take profile picture</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>we want to use your photos to select profile picture.</string>
 </dict>
 </plist>

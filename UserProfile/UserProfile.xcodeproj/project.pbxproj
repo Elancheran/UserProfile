@@ -26,6 +26,7 @@
 		A83F8CBB2691AD6100159968 /* UserProfileListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CB72691AD6100159968 /* UserProfileListViewModel.swift */; };
 		A83F8CBC2691AD6100159968 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CB82691AD6100159968 /* FavouriteViewModel.swift */; };
 		A83F8CC22691AD8E00159968 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CC12691AD8E00159968 /* UserService.swift */; };
+		A83F8CC72691B2CB00159968 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CC62691B2CB00159968 /* ImagePicker.swift */; };
 		A852792526916E4B000A1B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792426916E4B000A1B55 /* AppDelegate.swift */; };
 		A852792726916E4B000A1B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792626916E4B000A1B55 /* SceneDelegate.swift */; };
 		A852792926916E4B000A1B55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792826916E4B000A1B55 /* SignUpViewController.swift */; };
@@ -76,6 +77,7 @@
 		A83F8CB72691AD6100159968 /* UserProfileListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileListViewModel.swift; sourceTree = "<group>"; };
 		A83F8CB82691AD6100159968 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
 		A83F8CC12691AD8E00159968 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A83F8CC62691B2CB00159968 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A852792126916E4B000A1B55 /* UserProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A852792426916E4B000A1B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A852792626916E4B000A1B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				A83F8C802691AAB600159968 /* Validations.swift */,
+				A83F8CC62691B2CB00159968 /* ImagePicker.swift */,
 				A83F8C852691AAE000159968 /* LocalStorageHelper.swift */,
 			);
 			path = Utilities;
@@ -520,6 +523,7 @@
 				A83F8CAF2691AD0100159968 /* UserInfoViewController.swift in Sources */,
 				A852792926916E4B000A1B55 /* SignUpViewController.swift in Sources */,
 				A83F8CBA2691AD6100159968 /* UserProfileCellViewModel.swift in Sources */,
+				A83F8CC72691B2CB00159968 /* ImagePicker.swift in Sources */,
 				A83F8C9D2691AB3000159968 /* UserDetail.swift in Sources */,
 				A852792526916E4B000A1B55 /* AppDelegate.swift in Sources */,
 				A83F8CAD2691AD0100159968 /* UserProfileTableViewCell.swift in Sources */,

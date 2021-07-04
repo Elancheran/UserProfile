@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="height" constant="150" id="rua-oD-B76"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mi2-4R-gzs">
+                                <rect key="frame" x="132" y="138" width="150" height="150"/>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6M-9t-I0J">
                                 <rect key="frame" x="20" y="318" width="374" height="354"/>
                                 <subviews>
@@ -99,9 +102,13 @@
                         <constraints>
                             <constraint firstItem="q0j-Fo-mZ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="QwZ-Ta-kBr"/>
                             <constraint firstItem="F6M-9t-I0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aG1-xO-dzw"/>
+                            <constraint firstItem="Mi2-4R-gzs" firstAttribute="top" secondItem="q0j-Fo-mZ3" secondAttribute="top" id="goQ-IW-QZx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F6M-9t-I0J" secondAttribute="trailing" constant="20" id="iV9-zk-xmw"/>
                             <constraint firstItem="F6M-9t-I0J" firstAttribute="top" secondItem="q0j-Fo-mZ3" secondAttribute="bottom" constant="30" id="mxr-we-N9x"/>
+                            <constraint firstItem="Mi2-4R-gzs" firstAttribute="leading" secondItem="q0j-Fo-mZ3" secondAttribute="leading" id="oI5-ZF-lbV"/>
+                            <constraint firstItem="Mi2-4R-gzs" firstAttribute="width" secondItem="q0j-Fo-mZ3" secondAttribute="width" id="oV5-N1-gT0"/>
                             <constraint firstItem="F6M-9t-I0J" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wpI-Hl-da6"/>
+                            <constraint firstItem="Mi2-4R-gzs" firstAttribute="height" secondItem="q0j-Fo-mZ3" secondAttribute="height" id="xK0-ZK-GFR"/>
                             <constraint firstItem="q0j-Fo-mZ3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xZa-tb-2y4"/>
                         </constraints>
                     </view>
@@ -111,6 +118,7 @@
                         <outlet property="emailTextField" destination="yRE-TI-WE7" id="bNy-E3-nIc"/>
                         <outlet property="genderSegment" destination="pVp-Zi-vgl" id="Mt7-hX-lHy"/>
                         <outlet property="phoneTextField" destination="s1L-Wi-tc7" id="xnu-uD-hVL"/>
+                        <outlet property="pickImage" destination="Mi2-4R-gzs" id="lej-hY-fxc"/>
                         <outlet property="signupButton" destination="OZK-Uw-9hU" id="Nyv-xq-i19"/>
                         <outlet property="userImage" destination="q0j-Fo-mZ3" id="TIH-Lp-oOM"/>
                         <outlet property="usernameTextField" destination="QwA-gT-C7c" id="rIX-hi-LEs"/>

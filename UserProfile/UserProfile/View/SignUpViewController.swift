@@ -19,7 +19,10 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var genderSegment: UISegmentedControl!
     @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var pickImage: UIButton!
+
     @IBOutlet weak var userImage: UIImageView!
+    var imagePicker: ImagePicker!
     
     let datePicker = UIDatePicker()
     
@@ -31,7 +34,7 @@ class SignUpViewController: UIViewController {
         self.setupBindings()
         setDatePicker()
         self.navigationController?.navigationBar.isHidden = true
-        // Do any additional setup after loading the view.
+        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,6 +71,14 @@ class SignUpViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+        pickImage.rx.tap
+            .subscribe(onNext: { [weak self] in
+                guard let weakSelf = self else { return }
+                weakSelf.imagePicker.present(from: weakSelf.pickImage)
+            })
+            .disposed(by: disposeBag)
+        
+        
         RxKeyboard.instance.visibleHeight
           .drive(onNext: { [weak self] keyboardVisibleHeight in
             self?.view.frame.origin.y = -keyboardVisibleHeight
@@ -82,7 +93,7 @@ class SignUpViewController: UIViewController {
         emailTextField.text = ""
         phoneTextField.text = ""
         dobTextField.text = ""
-        userImage.image = nil
+        userImage.image = UIImage(named: "addImage")
     }
     
     func setDatePicker() {
@@ -130,3 +141,9 @@ class SignUpViewController: UIViewController {
 
 }
 
+extension SignUpViewController: ImagePickerDelegate {
+
+    func didSelect(image: UIImage?) {
+        self.userImage.image = image
+    }
+}
