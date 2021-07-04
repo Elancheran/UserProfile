@@ -43,25 +43,62 @@ class SignUpViewController: UIViewController {
     
     func setupBindings() {
 
-        usernameTextField.rx.text
+        usernameTextField.rx
+            .controlEvent(.editingDidEnd)
+            .withLatestFrom(usernameTextField.rx.text.orEmpty)
             .bind(to: viewModel.nameSubject)
             .disposed(by: disposeBag)
         
-        emailTextField.rx.text
+        emailTextField.rx
+            .controlEvent(.editingDidEnd)
+            .withLatestFrom(emailTextField.rx.text.orEmpty)
             .bind(to: viewModel.emailSubject)
             .disposed(by: disposeBag)
         
-        phoneTextField.rx.text
+        phoneTextField.rx
+            .controlEvent(.editingDidEnd)
+            .withLatestFrom(phoneTextField.rx.text.orEmpty)
             .bind(to: viewModel.phoneSubject)
             .disposed(by: disposeBag)
         
-        dobTextField.rx.text
+        dobTextField.rx
+            .controlEvent(.editingDidEnd)
+            .withLatestFrom(dobTextField.rx.text.orEmpty)
             .bind(to: viewModel.dateOfbirthSubject)
             .disposed(by: disposeBag)
         
         viewModel.isValidForm
-            .bind(to: signupButton.rx.isEnabled)
+            .subscribe(onNext: { [weak self] isValid in
+                self?.signupButton.isEnabled = isValid
+                self?.signupButton.isOpaque = isValid
+            })
             .disposed(by: disposeBag)
+            
+        
+        viewModel.isNameValid
+            .subscribe(onNext: { [weak self] isValid in
+                self?.usernameTextField.layer.borderColor = isValid ? UIColor.lightGray.cgColor : UIColor.red.cgColor
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.isDOBValid
+            .subscribe(onNext: { [weak self] isValid in
+                self?.dobTextField.layer.borderColor = isValid ? UIColor.lightGray.cgColor : UIColor.red.cgColor
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.isPhoneValid
+            .subscribe(onNext: { [weak self] isValid in
+                self?.phoneTextField.layer.borderColor = isValid ? UIColor.lightGray.cgColor : UIColor.red.cgColor
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.isEmailValid
+            .subscribe(onNext: { [weak self] isValid in
+                self?.emailTextField.layer.borderColor = isValid ? UIColor.lightGray.cgColor : UIColor.red.cgColor
+            })
+            .disposed(by: disposeBag)
+
         
         signupButton.rx.tap
             .subscribe(onNext: { [weak self] in
@@ -81,7 +118,7 @@ class SignUpViewController: UIViewController {
         
         RxKeyboard.instance.visibleHeight
           .drive(onNext: { [weak self] keyboardVisibleHeight in
-            self?.view.frame.origin.y = -keyboardVisibleHeight
+            self?.view.frame.origin.y = -(keyboardVisibleHeight * 0.5)
           })
           .disposed(by: disposeBag)
 

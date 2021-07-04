@@ -12,20 +12,37 @@ import RealmSwift
 
 class SignUpViewModel {
     
-    let nameSubject = BehaviorRelay<String?>(value: "")
-    let emailSubject = BehaviorRelay<String?>(value: "")
-    let gender = BehaviorRelay<Gender>(value: .male)
-    let phoneSubject = BehaviorRelay<String?>(value: "")
-    let dateOfbirthSubject = BehaviorRelay<String?>(value: "")
+    let nameSubject = PublishRelay<String?>()
+    let emailSubject = PublishRelay<String?>()
+    let gender = PublishRelay<Gender>()
+    let phoneSubject = PublishRelay<String?>()
+    let dateOfbirthSubject = PublishRelay<String?>()
     
+    var isNameValid: Observable<Bool> {
+        self.nameSubject.asObservable()
+            .map { Validations.validateName($0 ?? "")}
+    }
     
+    var isEmailValid: Observable<Bool> {
+        self.emailSubject.asObservable()
+            .map { Validations.validateEmail($0 ?? "")}
+    }
+    
+    var isDOBValid: Observable<Bool> {
+        self.dateOfbirthSubject.asObservable()
+            .map { Validations.validateDob($0?.getAsDate() ?? Date())}
+    }
+    
+    var isPhoneValid: Observable<Bool> {
+        self.phoneSubject.asObservable()
+            .map { Validations.validatePhone($0 ?? "")}
+    }
+        
     var isValidForm: Observable<Bool> {
 
-        return Observable.combineLatest(nameSubject, emailSubject, dateOfbirthSubject, phoneSubject) { name, email, dob, phone in
-            
-            guard let name = name, let email = email, let dob = dob, let phone = phone else { return false }
+        return Observable.combineLatest(isNameValid, isEmailValid, isPhoneValid, isDOBValid) { name, email, dob, phone in
 
-            return Validations.validateName(name) && Validations.validateEmail(email) && Validations.validateDob(dob.getAsDate()) && Validations.validatePhone(phone)
+            return name && email && dob && phone
         }
     }
 }

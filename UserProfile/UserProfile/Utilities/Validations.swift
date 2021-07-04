@@ -35,10 +35,3 @@ struct Validations {
     }
 }
 
-extension String {
-    func getAsDate() -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
-        return dateFormatter.date(from: self) ?? Date()
-    }
-}
