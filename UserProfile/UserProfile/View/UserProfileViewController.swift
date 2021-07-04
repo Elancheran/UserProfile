@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 class UserProfileViewController: UIViewController {
-
+    
     @IBOutlet weak var userProfileTableView: UITableView!
     @IBOutlet weak var genderSegmentControl: UISegmentedControl!
     
@@ -50,5 +50,5 @@ class UserProfileViewController: UIViewController {
             }
             .disposed(by: disposebag)
     }
-
+    
 }

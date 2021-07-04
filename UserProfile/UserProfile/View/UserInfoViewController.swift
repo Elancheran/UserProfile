@@ -55,8 +55,5 @@ class UserInfoViewController: UIViewController {
         self.viewModel.signOut()
         self.parent?.navigationController?.popViewController(animated: true)
     }
-    
-    
-
 
 }

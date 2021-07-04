@@ -12,7 +12,7 @@ import RealmSwift
 import RxKeyboard
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var dobTextField: UITextField!
@@ -20,7 +20,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var genderSegment: UISegmentedControl!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var pickImage: UIButton!
-
+    
     @IBOutlet weak var userImage: UIImageView!
     var imagePicker: ImagePicker!
     
@@ -31,18 +31,25 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupBindings()
-        setDatePicker()
-        self.navigationController?.navigationBar.isHidden = true
-        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+        self.setUpView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     
+    func setUpView() {
+        if viewModel.isAlreadyRegisterUser() {
+            self.pushToLandingView()
+        }
+        self.setupBindings()
+        setDatePicker()
+        self.navigationController?.navigationBar.isHidden = true
+        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+    }
+    
     func setupBindings() {
-
+        
         usernameTextField.rx
             .controlEvent(.editingDidEnd)
             .withLatestFrom(usernameTextField.rx.text.orEmpty)
@@ -73,7 +80,7 @@ class SignUpViewController: UIViewController {
                 self?.signupButton.isOpaque = isValid
             })
             .disposed(by: disposeBag)
-            
+        
         
         viewModel.isNameValid
             .subscribe(onNext: { [weak self] isValid in
@@ -98,7 +105,7 @@ class SignUpViewController: UIViewController {
                 self?.emailTextField.layer.borderColor = isValid ? UIColor.lightGray.cgColor : UIColor.red.cgColor
             })
             .disposed(by: disposeBag)
-
+        
         
         signupButton.rx.tap
             .subscribe(onNext: { [weak self] in
@@ -117,11 +124,11 @@ class SignUpViewController: UIViewController {
         
         
         RxKeyboard.instance.visibleHeight
-          .drive(onNext: { [weak self] keyboardVisibleHeight in
-            self?.view.frame.origin.y = -(keyboardVisibleHeight * 0.5)
-          })
-          .disposed(by: disposeBag)
-
+            .drive(onNext: { [weak self] keyboardVisibleHeight in
+                self?.view.frame.origin.y = -(keyboardVisibleHeight * 0.5)
+            })
+            .disposed(by: disposeBag)
+        
     }
     
     func resetView() {
@@ -140,20 +147,20 @@ class SignUpViewController: UIViewController {
         let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneDatePicker));
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
         let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
-
+        
         toolbar.setItems([cancelButton,spaceButton,doneButton], animated: false)
-
+        
         dobTextField.inputAccessoryView = toolbar
         dobTextField.inputView = datePicker
     }
-
+    
     @objc func doneDatePicker() {
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yyyy"
         dobTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
     }
-
+    
     @objc func cancelDatePicker(){
         self.view.endEditing(true)
     }
@@ -175,11 +182,11 @@ class SignUpViewController: UIViewController {
         profile.picture = userImage.image?.pngData() ?? Data()
         LocalStorageHelper.saveUser(profile: profile)
     }
-
+    
 }
 
 extension SignUpViewController: ImagePickerDelegate {
-
+    
     func didSelect(image: UIImage?) {
         self.userImage.image = image
     }

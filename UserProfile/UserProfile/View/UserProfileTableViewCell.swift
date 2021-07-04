@@ -11,7 +11,7 @@ import RxCocoa
 import Kingfisher
 
 class UserProfileTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var profilePhoto: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!

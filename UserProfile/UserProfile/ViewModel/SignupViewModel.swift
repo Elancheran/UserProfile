@@ -45,4 +45,17 @@ class SignUpViewModel {
             return name && email && dob && phone
         }
     }
+    
+    func isAlreadyRegisterUser() -> Bool {
+        do {
+            let realm = try Realm()
+            if realm.objects(Profile.self).count > 0 {
+                return true
+            }
+            return false
+        } catch {
+            print(error.localizedDescription)
+        }
+        return false
+    }
 }

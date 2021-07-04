@@ -10,10 +10,6 @@ import RealmSwift
 
 struct LocalStorageHelper {
     
-    static func getProfile() {
-        
-    }
-    
     static func saveUser(profile: Profile) {
         do {
             let realm = try Realm()

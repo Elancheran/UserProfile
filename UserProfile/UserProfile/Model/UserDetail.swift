@@ -25,7 +25,7 @@ struct UserDetail: Codable {
         case picture
         case favoriteColor
     }
-
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         

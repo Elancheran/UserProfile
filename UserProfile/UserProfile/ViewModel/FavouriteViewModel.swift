@@ -16,7 +16,6 @@ class FavouriteViewModel {
     }
     private var userProfileSubject = PublishSubject<[UserProfileCellViewModel]>()
     
-    
     func getFavouriteUser() {
         do {
             let realm = try Realm()

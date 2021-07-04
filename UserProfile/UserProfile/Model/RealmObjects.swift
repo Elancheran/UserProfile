@@ -17,9 +17,8 @@ class Profile: Object {
     @objc dynamic var picture = Data()
     
     override static func primaryKey() -> String? {
-            return "name"
-        }
-
+        return "name"
+    }
 }
 
 class FavouriteUser: Object {
@@ -31,8 +30,8 @@ class FavouriteUser: Object {
     @objc dynamic var picture = ""
     
     override static func primaryKey() -> String? {
-            return "name"
-        }
+        return "name"
+    }
     
     var asUserDetails: UserDetail {
         var user = UserDetail()

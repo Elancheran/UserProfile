@@ -8,12 +8,12 @@
 import Foundation
 
 struct Validations {
-
+    
     static func validateName(_ name: String) -> Bool {
         let validName = NSPredicate(format: "SELF MATCHES %@", "^[A-Za-z-’' ]+")
         return validName.evaluate(with: name) && name.count <= 40
     }
-
+    
     static func validateEmail(_ email: String) -> Bool {
         let emailRegex = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$"
         let validEmail = NSPredicate(format: "SELF MATCHES %@", emailRegex)

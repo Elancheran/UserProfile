@@ -14,11 +14,15 @@ class FavouriteViewController: UIViewController {
     private let viewModel = FavouriteViewModel()
     @IBOutlet weak var userTableView: UITableView!
     private var disposebag = DisposeBag()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupSubscription()
         self.setupView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.viewModel.getFavouriteUser()
     }
     
@@ -36,5 +40,4 @@ class FavouriteViewController: UIViewController {
             }
             .disposed(by: disposebag)
     }
-
 }
