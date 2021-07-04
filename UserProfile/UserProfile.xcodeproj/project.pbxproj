@@ -31,6 +31,7 @@
 		A83F8CDD26921D0500159968 /* SignUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CDC26921D0500159968 /* SignUpViewModelTests.swift */; };
 		A83F8CE22692202400159968 /* UserProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CE12692202400159968 /* UserProfileCellViewModel.swift */; };
 		A83F8CE72692232E00159968 /* UserProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CE62692232E00159968 /* UserProfileViewModelTests.swift */; };
+		A83F8CF226922F8800159968 /* ValidationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CF126922F8800159968 /* ValidationsTests.swift */; };
 		A852792526916E4B000A1B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792426916E4B000A1B55 /* AppDelegate.swift */; };
 		A852792726916E4B000A1B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792626916E4B000A1B55 /* SceneDelegate.swift */; };
 		A852792926916E4B000A1B55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792826916E4B000A1B55 /* SignUpViewController.swift */; };
@@ -85,6 +86,7 @@
 		A83F8CDC26921D0500159968 /* SignUpViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelTests.swift; sourceTree = "<group>"; };
 		A83F8CE12692202400159968 /* UserProfileCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCellViewModel.swift; sourceTree = "<group>"; };
 		A83F8CE62692232E00159968 /* UserProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModelTests.swift; sourceTree = "<group>"; };
+		A83F8CF126922F8800159968 /* ValidationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationsTests.swift; sourceTree = "<group>"; };
 		A852792126916E4B000A1B55 /* UserProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A852792426916E4B000A1B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A852792626916E4B000A1B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				A83F8CDC26921D0500159968 /* SignUpViewModelTests.swift */,
 				A83F8CE62692232E00159968 /* UserProfileViewModelTests.swift */,
 				A83F8CE12692202400159968 /* UserProfileCellViewModel.swift */,
+				A83F8CF126922F8800159968 /* ValidationsTests.swift */,
 				A852793D26916E4C000A1B55 /* Info.plist */,
 			);
 			path = UserProfileTests;
@@ -554,6 +557,7 @@
 			files = (
 				A83F8CDD26921D0500159968 /* SignUpViewModelTests.swift in Sources */,
 				A83F8CE72692232E00159968 /* UserProfileViewModelTests.swift in Sources */,
+				A83F8CF226922F8800159968 /* ValidationsTests.swift in Sources */,
 				A83F8CE22692202400159968 /* UserProfileCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
