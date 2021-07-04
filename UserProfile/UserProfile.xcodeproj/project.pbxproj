@@ -15,6 +15,17 @@
 		A83F8C862691AAE000159968 /* LocalStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8C852691AAE000159968 /* LocalStorageHelper.swift */; };
 		A83F8C9D2691AB3000159968 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8C9C2691AB3000159968 /* UserDetail.swift */; };
 		A83F8CA22691AB5400159968 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CA12691AB5400159968 /* RealmObjects.swift */; };
+		A83F8CAC2691AD0100159968 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CA62691AD0000159968 /* FavouriteViewController.swift */; };
+		A83F8CAD2691AD0100159968 /* UserProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CA72691AD0000159968 /* UserProfileTableViewCell.swift */; };
+		A83F8CAE2691AD0100159968 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CA82691AD0100159968 /* UserProfileViewController.swift */; };
+		A83F8CAF2691AD0100159968 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CA92691AD0100159968 /* UserInfoViewController.swift */; };
+		A83F8CB02691AD0100159968 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CAA2691AD0100159968 /* TabBarViewController.swift */; };
+		A83F8CB12691AD0100159968 /* UserProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A83F8CAB2691AD0100159968 /* UserProfileTableViewCell.xib */; };
+		A83F8CB92691AD6100159968 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CB52691AD6100159968 /* UserInfoViewModel.swift */; };
+		A83F8CBA2691AD6100159968 /* UserProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CB62691AD6100159968 /* UserProfileCellViewModel.swift */; };
+		A83F8CBB2691AD6100159968 /* UserProfileListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CB72691AD6100159968 /* UserProfileListViewModel.swift */; };
+		A83F8CBC2691AD6100159968 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CB82691AD6100159968 /* FavouriteViewModel.swift */; };
+		A83F8CC22691AD8E00159968 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F8CC12691AD8E00159968 /* UserService.swift */; };
 		A852792526916E4B000A1B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792426916E4B000A1B55 /* AppDelegate.swift */; };
 		A852792726916E4B000A1B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792626916E4B000A1B55 /* SceneDelegate.swift */; };
 		A852792926916E4B000A1B55 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A852792826916E4B000A1B55 /* SignUpViewController.swift */; };
@@ -54,6 +65,17 @@
 		A83F8C852691AAE000159968 /* LocalStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageHelper.swift; sourceTree = "<group>"; };
 		A83F8C9C2691AB3000159968 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		A83F8CA12691AB5400159968 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
+		A83F8CA62691AD0000159968 /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		A83F8CA72691AD0000159968 /* UserProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewCell.swift; sourceTree = "<group>"; };
+		A83F8CA82691AD0100159968 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		A83F8CA92691AD0100159968 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		A83F8CAA2691AD0100159968 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A83F8CAB2691AD0100159968 /* UserProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfileTableViewCell.xib; sourceTree = "<group>"; };
+		A83F8CB52691AD6100159968 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		A83F8CB62691AD6100159968 /* UserProfileCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileCellViewModel.swift; sourceTree = "<group>"; };
+		A83F8CB72691AD6100159968 /* UserProfileListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileListViewModel.swift; sourceTree = "<group>"; };
+		A83F8CB82691AD6100159968 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		A83F8CC12691AD8E00159968 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A852792126916E4B000A1B55 /* UserProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A852792426916E4B000A1B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A852792626916E4B000A1B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +136,12 @@
 		A83F8C742691AA0700159968 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A83F8CA62691AD0000159968 /* FavouriteViewController.swift */,
+				A83F8CAA2691AD0100159968 /* TabBarViewController.swift */,
+				A83F8CA92691AD0100159968 /* UserInfoViewController.swift */,
+				A83F8CA72691AD0000159968 /* UserProfileTableViewCell.swift */,
+				A83F8CAB2691AD0100159968 /* UserProfileTableViewCell.xib */,
+				A83F8CA82691AD0100159968 /* UserProfileViewController.swift */,
 				A852792826916E4B000A1B55 /* SignUpViewController.swift */,
 			);
 			path = View;
@@ -132,6 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				A83F8C7A2691AA7300159968 /* SignupViewModel.swift */,
+				A83F8CB82691AD6100159968 /* FavouriteViewModel.swift */,
+				A83F8CB52691AD6100159968 /* UserInfoViewModel.swift */,
+				A83F8CB62691AD6100159968 /* UserProfileCellViewModel.swift */,
+				A83F8CB72691AD6100159968 /* UserProfileListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,6 +175,14 @@
 				A83F8C852691AAE000159968 /* LocalStorageHelper.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A83F8CC02691AD7F00159968 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A83F8CC12691AD8E00159968 /* UserService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A852791826916E4B000A1B55 = {
@@ -172,6 +212,7 @@
 			children = (
 				A852792426916E4B000A1B55 /* AppDelegate.swift */,
 				A852792626916E4B000A1B55 /* SceneDelegate.swift */,
+				A83F8CC02691AD7F00159968 /* Service */,
 				A83F8C762691AA1600159968 /* ViewModel */,
 				A83F8C752691AA0E00159968 /* Model */,
 				A83F8C742691AA0700159968 /* View */,
@@ -324,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83F8CB12691AD0100159968 /* UserProfileTableViewCell.xib in Resources */,
 				A852793126916E4C000A1B55 /* LaunchScreen.storyboard in Resources */,
 				A852792E26916E4C000A1B55 /* Assets.xcassets in Resources */,
 				A852792C26916E4B000A1B55 /* Main.storyboard in Resources */,
@@ -472,12 +514,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83F8CA22691AB5400159968 /* RealmObjects.swift in Sources */,
+				A83F8CBB2691AD6100159968 /* UserProfileListViewModel.swift in Sources */,
+				A83F8CC22691AD8E00159968 /* UserService.swift in Sources */,
+				A83F8CBC2691AD6100159968 /* FavouriteViewModel.swift in Sources */,
+				A83F8CAF2691AD0100159968 /* UserInfoViewController.swift in Sources */,
 				A852792926916E4B000A1B55 /* SignUpViewController.swift in Sources */,
+				A83F8CBA2691AD6100159968 /* UserProfileCellViewModel.swift in Sources */,
 				A83F8C9D2691AB3000159968 /* UserDetail.swift in Sources */,
 				A852792526916E4B000A1B55 /* AppDelegate.swift in Sources */,
+				A83F8CAD2691AD0100159968 /* UserProfileTableViewCell.swift in Sources */,
+				A83F8CAC2691AD0100159968 /* FavouriteViewController.swift in Sources */,
 				A83F8C7B2691AA7300159968 /* SignupViewModel.swift in Sources */,
 				A83F8C862691AAE000159968 /* LocalStorageHelper.swift in Sources */,
+				A83F8CB92691AD6100159968 /* UserInfoViewModel.swift in Sources */,
 				A852792726916E4B000A1B55 /* SceneDelegate.swift in Sources */,
+				A83F8CB02691AD0100159968 /* TabBarViewController.swift in Sources */,
+				A83F8CAE2691AD0100159968 /* UserProfileViewController.swift in Sources */,
 				A83F8C812691AAB600159968 /* Validations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -111,7 +111,9 @@ class SignUpViewController: UIViewController {
     }
     
     func pushToLandingView() {
-        // Push to Home screen
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let tabBarVC = storyboard.instantiateViewController(identifier: "tabBarVC") as? TabBarViewController ?? TabBarViewController()
+        self.navigationController?.pushViewController(tabBarVC, animated: true)
     }
     
     
